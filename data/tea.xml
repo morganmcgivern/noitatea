@@ -1,0 +1,48 @@
+<Materials>
+
+  <CellData
+	name="tea"
+	ui_name="$mat_tea"
+  	tags="[liquid],[corrodible],[soluble],[impure],[liquid_common],[evaporable_by_fire],[food]"
+	burnable="1"
+	density="3.5"
+	cell_type="liquid"
+	wang_color="f8be03"
+	generates_smoke="0"
+	liquid_gravity="1.0"
+	liquid_sand="0"
+	liquid_stains="1.7"
+	liquid_viscosity="0.9"
+	on_fire="0"
+	requires_oxygen="1"
+	temperature_of_fire="10"
+	autoignition_temperature="50"
+	show_in_creative_mode="1"
+	fire_hp="100"
+	hp="1000"
+	audio_is_soft="1"
+	>
+    <Graphics 
+	texture_file="data/materials_gfx/tea.png" 
+	color="f8be03" >
+    </Graphics>
+	<StatusEffects>
+		<Ingestion>
+			<StatusEffect type="HP_REGENERATION" amount="0.006" />
+		</Ingestion>
+	</StatusEffects>
+  </CellData>
+
+  <Reaction probability="35"
+	input_cell1="steam" 		input_cell2="soil_lush"
+	output_cell1="tea" 		output_cell2="steam"  
+	>
+  </Reaction>
+  
+  <Reaction probability="35"
+	input_cell1="steam" 		input_cell2="vine"
+	output_cell1="tea" 		output_cell2="steam"  
+	>
+  </Reaction>
+
+</Materials>
