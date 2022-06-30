@@ -33,7 +33,7 @@
 	</StatusEffects>
   </CellData>
 
-  <Reaction probability="35"
+  <Reaction probability="25"
 	input_cell1="steam" 		input_cell2="soil_lush"
 	output_cell1="tea" 		output_cell2="steam"  
 	>
@@ -44,5 +44,12 @@
 	output_cell1="tea" 		output_cell2="steam"  
 	>
   </Reaction>
+  
+  <Reaction probability="20"
+	input_cell1="steam" 		input_cell2="root_growth"
+	output_cell1="tea" 		output_cell2="steam"  
+	>
+  </Reaction>
+  
 
 </Materials>
